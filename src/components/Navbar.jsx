@@ -9,8 +9,8 @@
 
       return (
         <>
-          <div className="container  bg-emerald-700  h-28 min-w-screen text-2xl font-black flex items-center justify-between px-5  md:justify-start  md:gap-[45vw]">
-            <NavLink to="/" className="text-white text-3xl">ThinkZap</NavLink>
+          <div className="container  bg-black h-28 min-w-screen text-2xl font-black flex items-center justify-between px-5  md:justify-start  md:gap-[45vw]">
+            <NavLink to="/" className="text-white font-bold text-3xl">ThinkZap</NavLink>
             <div className="navlinkContainer hidden  md:flex items-center justify-center gap-8">
               <NavLink
                 to="/"
@@ -41,7 +41,7 @@
             <button onClick={()=>setnavOpen(!navOpen)} className="md:hidden z-50">{navOpen?<FaTimes size={40} color="white"/>:<FaBars size={40} color="white"/>}</button>
 
 
-            <div className={`navlinkContainer bg-red-400 absolute h-full top-0 w-full left-0 transform transition-transform duration-500 ease-in-out z-40 flex gap-8 text-3xl flex-col items-center justify-center  ${navOpen?"translate-x-0":"-translate-x-full"} `}>
+            <div className={`navlinkContainer bg-black absolute h-full top-0 w-full left-0 transform transition-transform duration-500 ease-in-out z-40 flex gap-8 text-3xl flex-col items-center justify-center  ${navOpen?"translate-x-0":"-translate-x-full"} `}>
               <NavLink
                 onClick={()=>setnavOpen(!navOpen)}
                 to="/"

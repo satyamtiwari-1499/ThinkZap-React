@@ -22,7 +22,6 @@ const Home = () => {
         e.target.classList.add("correct");
         setlock(true);
         setscore((prev) => prev + 1);
-        console.log(score);
       } else {
         e.target.classList.add("wrong");
         setlock(true);
@@ -122,7 +121,7 @@ const Home = () => {
               {giveExp && <li>Explanation : {giveExp}</li>}
             </ul>
             <button
-              onClick={next}
+              onClick={lock && next}
               className="bg-green-600 cursor-pointer text-white mt-6 px-6 py-2 rounded w-full sm:w-28 mx-auto block"
             >
               Next
